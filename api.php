@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__)."/service/pomodoro.php";
+require_once dirname(__FILE__) . "/service/pomodoro.php";
 
 $username = isset($_GET['u']) ? $_GET['u'] : null;
 $teamname = isset($_GET['t']) ? $_GET['t'] : null;
@@ -11,8 +11,7 @@ $pomodoro = new PomodoroService();
 
 $rv = null;
 
-switch($command)
-{
+switch ($command) {
   case "status_all":
     $rv = $pomodoro->get_all_status();
     break;
@@ -40,7 +39,6 @@ switch($command)
   case "team_start":
     $rv = $pomodoro->start_team_pomodoro($teamname);
     break;
-
 }
 
 $json = json_encode($rv);
