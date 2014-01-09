@@ -1,7 +1,7 @@
 <!--
 ********************************************************************************
 **                                                                            **
-** We're looking for contributors for collaborating developpment              **
+** We are looking for contributors for collaborating developpment             **
 ** of this Pomodoro's Project                                                 **
 **                                                                            **
 ** You can work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?  **
@@ -17,7 +17,7 @@
 <html lang='en'>
   <head>
     <?php
-    $_GET['u'] = ucfirst('test');
+    $_GET['u'] = ucfirst('testor');
     $_GET['t'] = strtoupper('gc7');
 
     $username = isset($_GET['u']) ? $_GET['u'] : null;
