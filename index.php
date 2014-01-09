@@ -7,9 +7,9 @@
     $username = isset($_GET['u']) ? $_GET['u'] : null;
     $teamname = isset($_GET['t']) ? $_GET['t'] : null;
 
-    $username='li';
-    $teamname='gc7';
-    
+    $username = ucfirst('li');
+    $teamname = strtoupper('gc7');
+
     if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
       die('</head><body><p>Please enter your user name!!</p></body></html>');
     }
@@ -20,9 +20,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.pack.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
     <script type="text/javascript">
-      var username = "<?php echo $username; ?>";
-      var teamname = "<?php echo $teamname; ?>";</script>
+      var username = "<?php echo ucfirst($username); ?>";
+      var teamname = "<?php echo strtoupper($teamname); ?>";</script>
     <style type="text/css">
       #content {
         width : 400px;
@@ -60,7 +61,7 @@
         <div id="name">
           <?php
           if (!is_null($teamname)) {
-            echo $teamname;
+            echo $username.' - '.$teamname;
           } else {
             echo $username;
           }

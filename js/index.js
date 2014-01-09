@@ -236,8 +236,8 @@ $("#stop").button();
 $("#player").jPlayer({
     ready: function () {
         $(this).jPlayer("setMedia", {
-            mp3: "http://pomodoro.iletken.com.tr/media/TaDa.mp3",
-            oga: "http://pomodoro.iletken.com.tr/media/TaDa.ogg"
+            mp3: "media/TaDa.mp3",
+            oga: "media/TaDa.ogg"
         });
         status();
     },
