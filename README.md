@@ -1,4 +1,4 @@
-Pomodoro v0.001
+Pomodoro v 0.001
 ===============
 
 
