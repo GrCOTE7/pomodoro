@@ -4,11 +4,11 @@
     <title>Pomodoro Tracker</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <?php
+    $_GET['u'] = ucfirst('li');
+    $_GET['t'] = strtoupper('gc7');
+    
     $username = isset($_GET['u']) ? $_GET['u'] : null;
     $teamname = isset($_GET['t']) ? $_GET['t'] : null;
-
-    $username = ucfirst('li');
-    $teamname = strtoupper('gc7');
 
     if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
       die('</head><body><p>Please enter your user name!!</p></body></html>');
