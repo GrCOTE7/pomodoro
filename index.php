@@ -1,12 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang='en'>
   <head>
-    <title>Pomodoro Tracker</title>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="utf-8">
+    <title>Pomodoro</title>
+
+    /* ********************************************************************** */
+    /*                                                                        */
+    /* We're looking for contributors for developp this Pomodoro 's Project   */
+    /*                                                                        */
+    * You work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?      * 
+    *                                                                            *
+    * Please write to POMODO dot MANUDON.COM                                          *
+    *                                                                            *
+    * ************************************************************************** */
+
     <?php
     $_GET['u'] = ucfirst('li');
     $_GET['t'] = strtoupper('gc7');
-    
+
     $username = isset($_GET['u']) ? $_GET['u'] : null;
     $teamname = isset($_GET['t']) ? $_GET['t'] : null;
 
@@ -61,7 +72,7 @@
         <div id="name">
           <?php
           if (!is_null($teamname)) {
-            echo $username.' - '.$teamname;
+            echo $username . ' - ' . $teamname;
           } else {
             echo $username;
           }
@@ -74,14 +85,14 @@
         <div id="buttons">
           <?php if (!is_null($teamname)) { ?>
             <button id="start" onclick="start_team();
-                  return false">Start</button>
+                return false">Start</button>
             <button id="stop" onclick="stop_team();
-                  return false">Stop</button>
+                return false">Stop</button>
                   <?php } else { ?>
             <button id="start" onclick="start();
-                  return false">Start</button>
+                return false">Start</button>
             <button id="stop" onclick="stop();
-                  return false">Stop</button>
+                return false">Stop</button>
                   <?php } ?>
         </div>
       </div>
@@ -90,7 +101,7 @@
     <div id="player"></div>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
-    $('#start').trigger('click');
+            $('#start').trigger('click');
     </script>
   </body>
 </html>
