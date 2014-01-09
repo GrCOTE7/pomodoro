@@ -7,7 +7,7 @@
 **                                                                            **
 ** Please contact-us at : POMODO dot MANUDON.COM                              **
 **                                                                            **
-** https://github.com/GrCOTE7/pomodoro                                                                     **
+** https://github.com/GrCOTE7/pomodoro                                        **
 **                                                                            **
 ********************************************************************************
 -->
@@ -28,7 +28,7 @@
       die('</head><body><p>Please enter your user name!!</p></body></html>');
     }
     ?>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/reset.min.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery.countdown.pack.js"></script>
