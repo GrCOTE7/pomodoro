@@ -7,6 +7,9 @@
     $username = isset($_GET['u']) ? $_GET['u'] : null;
     $teamname = isset($_GET['t']) ? $_GET['t'] : null;
 
+    $username='li';
+    $teamname='gc7';
+    
     if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
       die('</head><body><p>Please enter your user name!!</p></body></html>');
     }
