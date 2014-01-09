@@ -11,23 +11,46 @@
 **                                                                            **
 ********************************************************************************
 -->
+<?php
+$_GET['u'] = ucfirst('lionel');
+$_GET['t'] = strtoupper('gc7');
+
+$username = isset($_GET['u']) ? $_GET['u'] : null;
+$teamname = isset($_GET['t']) ? $_GET['t'] : null;
+
+if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
+  die('</head><body><p>Please enter your user name!!</p></body></html>');
+}
+?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <title>Pomodoro</title>
+    <title>Pomodoro | GC7</title>
 
-    <?php
-    $_GET['u'] = ucfirst('li');
-    $_GET['t'] = strtoupper('gc7');
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
 
-    $username = isset($_GET['u']) ? $_GET['u'] : null;
-    $teamname = isset($_GET['t']) ? $_GET['t'] : null;
+    <meta name="application-name" content="Page Type"/>
+    <meta name="robots" content="noindex,follow"/>
+    <meta name="geo.placename" content="Paris, Ile de France, France" />
 
-    if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
-      die('</head><body><p>Please enter your user name!!</p></body></html>');
-    }
-    ?>
+    <meta name="keywords" content="Groupe,COTE" />
+    <meta name="description" content="Boosteur,Centre,Affaires, International,Business,E-Business,Marketing,E-Marketing,Formation, E-Formation,Enseignement,E-Enseignement" />
+    <meta name="author" content="Lionel COTE" />
+
+    <!-- @   T O D O  : Flux: XML thématiques & RSS -->
+
+    <link rel="shortcut icon" href="http://cote7.com/favicon.ico"/>
+    <link rel="icon" type="image/x-icon"  href="http://cote7.com/favicon.ico"/>
+    <!-- @   T O D O  : Possibilité d'avoir l'icône en .png-->        
+    <!--<link rel="icon" type="image/png" href="#" />-->
+
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
     <link rel="stylesheet" type="text/css" href="lib/css/reset.min.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
