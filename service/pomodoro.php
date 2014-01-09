@@ -165,7 +165,7 @@ class PomodoroService
          {
            $this->fail($user->username);
          }
-         $user->status = "IDLE";
+         $user->status = "En cours";
          $user->begin = time();
          $this->user_dao->update($user);
       }

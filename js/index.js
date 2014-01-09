@@ -129,7 +129,7 @@ function start() {
 }
 
 function start_team() {
-  $('#liResult').html('Simulated click for '+teamname+'<hr>');
+  $('#liResult').html('Simulated click on start\'s button for Team: '+teamname+'<hr>');
       "use strict";
     $.getJSON('api.php', {
         t: teamname,
