@@ -1,18 +1,19 @@
+<!--
+********************************************************************************
+**                                                                            **
+** We're looking for contributors for developp this Pomodoro 's Project       **
+**                                                                            **
+** You work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?      **
+**                                                                            **
+** Please contact-us at POMODO dot MANUDON.COM                                     **
+**                                                                            **
+********************************************************************************
+-->
 <!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
     <title>Pomodoro</title>
-
-    /* ********************************************************************** */
-    /*                                                                        */
-    /* We're looking for contributors for developp this Pomodoro 's Project   */
-    /*                                                                        */
-    /* You work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?  */
-    /*                                                                        */
-    /* Please write to POMODO dot MANUDON.COM                                 */
-    /*                                                                        */
-    /* ********************************************************************** */
 
     <?php
     $_GET['u'] = ucfirst('li');
@@ -26,9 +27,8 @@
     }
     ?>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.pack.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 
