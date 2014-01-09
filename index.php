@@ -94,3 +94,4 @@
     </script>
   </body>
 </html>
+<a href="mailto:uuuu">ty</a>
