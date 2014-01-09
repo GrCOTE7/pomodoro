@@ -1,7 +1,7 @@
 <!--
 ********************************************************************************
 **                                                                            **
-** We're looking for contributors for developp this Pomodoro 's Project       **
+** We're looking for contributors for developp this Pomodoro's Project        **
 **                                                                            **
 ** You can work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?  **
 **                                                                            **
