@@ -11,20 +11,20 @@
 **                                                                            **
 ********************************************************************************
 -->
-<?php
-$_GET['u'] = ucfirst('lionel');
-$_GET['t'] = strtoupper('gc7');
-
-$username = isset($_GET['u']) ? $_GET['u'] : null;
-$teamname = isset($_GET['t']) ? $_GET['t'] : null;
-
-if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
-  die('</head><body><p>Please enter your user name!!</p></body></html>');
-}
-?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
+    <?php
+    $_GET['u'] = ucfirst('test');
+    $_GET['t'] = strtoupper('gc7');
+
+    $username = isset($_GET['u']) ? $_GET['u'] : null;
+    $teamname = isset($_GET['t']) ? $_GET['t'] : null;
+
+    if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname === "")) {
+      die('</head><body><p>Please enter your user name!!</p></body></html>');
+    }
+    ?>
     <meta charset="utf-8">
     <title>Pomodoro | GC7</title>
 
@@ -62,19 +62,21 @@ if ((is_null($username) || $username === "") && (is_null($teamname) || $teamname
       var teamname = "<?php echo strtoupper($teamname); ?>";</script>
     <style type="text/css">
       #content {
-        width : 400px;
+        width : 700px;
         height : 350px;
-        margin : auto;
+        border: 1px solid red;
+        border-radius: 15px;
+        margin: 10px auto;
       }
       #timer {
         text-align : right;
-        font-size : 100px;
+        font-size : 70px;
         font-family : Arial;
         height: 100px;
       }
       #name {
         text-align : center;
-        font-size : 80px;
+        font-size : 50px;
         font-family : Arial;
         font-weight : bold;
         border-bottom : 2px solid black;
