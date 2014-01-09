@@ -68,6 +68,7 @@
           ?>
           <span></span>
         </div>
+        <div id='liResult'></div>
         <div id="timer"></div>
         <div id="progress"></div>
         <div id="buttons">
@@ -88,5 +89,8 @@
     <div id="dialog-confirm"></div>
     <div id="player"></div>
     <script type="text/javascript" src="js/index.js"></script>
+    <script>
+    $('#start').trigger('click');
+    </script>
   </body>
 </html>
