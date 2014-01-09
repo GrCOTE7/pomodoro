@@ -69,7 +69,6 @@
     </style>
   </head>
   <body>
-    12
     <div id="main">
       <div id="content">
         <div id="name">
