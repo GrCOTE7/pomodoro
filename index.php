@@ -6,6 +6,6 @@
  * and open the template in the editor.
  */
 
-echo 'Testing GIT 21 abcd';
+echo 'Testing GIT 21';
 
 //echo scandir();
