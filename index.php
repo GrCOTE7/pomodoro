@@ -8,11 +8,11 @@
     /*                                                                        */
     /* We're looking for contributors for developp this Pomodoro 's Project   */
     /*                                                                        */
-    * You work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?      * 
-    *                                                                            *
-    * Please write to POMODO dot MANUDON.COM                                          *
-    *                                                                            *
-    * ************************************************************************** */
+    /* You work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?  */
+    /*                                                                        */
+    /* Please write to POMODO dot MANUDON.COM                                 */
+    /*                                                                        */
+    /* ********************************************************************** */
 
     <?php
     $_GET['u'] = ucfirst('li');
