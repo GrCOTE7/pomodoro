@@ -7,7 +7,7 @@
 **                                                                            **
 ** Please contact-us at : POMODO dot MANUDON.COM                              **
 **                                                                            **
-**                                                                            **
+** https://github.com/GrCOTE7/pomodoro                                                                     **
 **                                                                            **
 ********************************************************************************
 -->
