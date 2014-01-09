@@ -2,7 +2,7 @@
 ********************************************************************************
 **                                                                            **
 ** We are looking for contributors for collaborating developpment             **
-** of this Pomodoro's Project                                                 **
+** of this Pomodoro s Project                                                 **
 **                                                                            **
 ** You can work with NetBeans, know HTML5 / CSS3 or PHP or MySQL or jQuery ?  **
 **                                                                            **
