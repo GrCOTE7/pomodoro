@@ -38,7 +38,7 @@
 
     <meta name="keywords" content="Groupe,COTE" />
     <meta name="description" content="Boosteur,Centre,Affaires, International,Business,E-Business,Marketing,E-Marketing,Formation, E-Formation,Enseignement,E-Enseignement" />
-    <meta name="author" content="Lionel COTE" />
+    <meta name="author" content="Harold COTE" />
 
     <!-- @   T O D O  : Flux: XML thématiques & RSS -->
 
@@ -51,58 +51,25 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="lib/css/reset.min.css" />
+    <link rel="stylesheet" href="lib/css/reset.min.css" />
+    <!-- <link rel="stylesheet" href="lib/css/style.min.css" /> @TOFIX END-->
+    <link rel="stylesheet" href="lib/css/style.css" />
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery.countdown.pack.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 
     <script type="text/javascript">
-      var username = "<?php echo ucfirst($username); ?>";
-      var teamname = "<?php echo strtoupper($teamname); ?>";</script>
-    <style type="text/css">
-      #content {
-        width : 700px;
-        height : 350px;
-        border: 1px solid red;
-        border-radius: 15px;
-        margin: 10px auto;
-      }
-      #timer {
-        text-align : right;
-        font-size : 70px;
-        font-family : Arial;
-        height: 100px;
-      }
-      #name {
-        text-align : center;
-        font-size : 50px;
-        font-family : Arial;
-        font-weight : bold;
-        border-bottom : 2px solid black;
-      }
-      #progress {
-        width : 380px;
-        height : 50px;
-        margin : auto;
-        margin-top : 10px;
-        margin-bottom : 10px;
-      }
-      #buttons {
-        text-align : center;
-      }
-    </style>
+      var username = "<?php echo ucfirst($username); ?>", teamname = "<?php echo strtoupper($teamname); ?>";</script>
+
   </head>
   <body>
     <div id="main">
       <div id="content">
         <div id="name">
           <?php
-          if (!is_null($teamname)) {
-            echo $username . ' - ' . $teamname;
-          } else {
-            echo $username;
-          }
+          echo (!is_null($teamname)) ? $username . ' - ' . $teamname : $username;
           ?>
           <span></span>
         </div>
